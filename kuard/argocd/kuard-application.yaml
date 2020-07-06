@@ -16,6 +16,11 @@ spec:
 
   syncPolicy:
     validate: true
+    automated:
+      # Enable automatic sync when the live cluster's state deviates from the state defined in Git
+      selfHeal: true
+      # Delete resources when Argo CD detects the resource is no longer defined in Git.
+      prune: true
 
   # Destination cluster and namespace to deploy the application
   destination:
