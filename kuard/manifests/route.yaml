@@ -7,4 +7,4 @@ spec:
     kind: Service
     name: kuard
   port:
-    targetPort: 80
+    targetPort: http
