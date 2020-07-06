@@ -1,0 +1,11 @@
+apiVersion: route.openshift.io/v1
+kind: Route
+metadata:
+  name: kuard
+spec:
+  path: /
+  to:
+    kind: Service
+    name: kuard-service
+  port:
+    targetPort: 80
