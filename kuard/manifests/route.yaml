@@ -6,6 +6,6 @@ spec:
   path: /
   to:
     kind: Service
-    name: kuard-service
+    name: kuard
   port:
     targetPort: 80
